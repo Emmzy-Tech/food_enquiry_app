@@ -53,12 +53,16 @@ const NavMenu = () => {
   </Link>
   </NavigationMenuItem>
    <NavigationMenuItem className='list-none'>
+   <Link href="/login" legacyBehavior passHref>
    <Button className={cn(buttonVariants({ }), "bg-transparent text-purple-950 mr-2 hover:text-white hover:bg-purple-950")} variant="outline">
     Login
     </Button>
+    </Link>
+    <Link href="/register" legacyBehavior passHref>
    <Button className={cn(buttonVariants({ }), "bg-purple-950 hover:bg-transparent hover:text-purple-950")}>
     Signup
     </Button>
+    </Link>
    </NavigationMenuItem>
   </NavigationMenu>
   
