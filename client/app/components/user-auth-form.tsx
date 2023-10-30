@@ -16,10 +16,13 @@ export function UserAuthForm({ className,page, ...props }: UserAuthFormProps) {
 
   async function onSubmit(event: React.SyntheticEvent) {
     event.preventDefault()
-    React.useEffect(() => {
-        setIsLoading(true)
-      }, [])
+    // React.useEffect(() => {
+    //     setIsLoading(true)
+    //   }, [])
     
+    // Set isLoading to true before the asynchronous operation
+    setIsLoading(true);
+
 
     setTimeout(() => {
       setIsLoading(false)
