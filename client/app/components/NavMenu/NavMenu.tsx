@@ -41,12 +41,12 @@ const NavMenu = () => {
     </NavigationMenuLink>
   </Link>
   <NavigationMenuItem className='list-none'>
-  <Link href="/docs" legacyBehavior passHref>
+  <Link href="/restuarants" legacyBehavior passHref>
     <NavigationMenuLink className={navigationMenuTriggerStyle()}>
       Restuarants
     </NavigationMenuLink>
   </Link>
-  <Link href="/docs" legacyBehavior passHref>
+  <Link href="/recipe" legacyBehavior passHref>
     <NavigationMenuLink className={navigationMenuTriggerStyle()}>
       Recipe
     </NavigationMenuLink>
