@@ -3,10 +3,11 @@ import React from 'react'
 import Lot from "@/app/assets/Recipe book.gif"
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 
 const LandingPage = () => {
   return (
-    <main className='max-w-screen-2xl mx-auto w-full h-screen  flex justify-between p-7 flex-col-reverse items-center md:flex-row-reverse'>
+    <main className='max-w-screen-2xl mx-auto w-full md:h-screen  flex justify-between p-7 flex-col-reverse items-center md:flex-row-reverse'>
         <aside className='mr-1 w-full md:w-1/2'>
         <Image className="w-full" src={Lot} alt=''/>
         </aside>
@@ -19,7 +20,9 @@ const LandingPage = () => {
           type='text'
           placeholder='Search menu, recipe etc.'
           className='h-14 w-1/2'/>
+          <Link href="/recipe">
           <Button className='h-14 px-10 ml-3 bg-purple-950'>Search</Button>
+          </Link>
           </div>
         </main>
     </main>
